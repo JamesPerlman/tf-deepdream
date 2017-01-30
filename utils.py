@@ -32,6 +32,7 @@ def strip_consts(graph_def, max_const_size=32):
     return strip_def
 
 
+
 def rename_nodes(graph_def, rename_func):
     res_def = tf.GraphDef()
     for n0 in graph_def.node:
@@ -107,6 +108,13 @@ class Deepdream:
         self.img0 = np.float32(self.img0)
 
         self.resize = tffunc(np.float32, np.int32)(_resize)
+
+    def show_lap_graph(self):
+        lap_graph = tf.Graph()
+        with lap_graph.as_default():
+            lap_in = tf.placeholder(np.float32, name='lap_in')
+            lap_out = self.lap_normalize(lap_in)
+        self.show_graph(lap_graph)
 
     def calc_grad_tiled(self, img, t_grad, tile_size=512):
         '''Compute the value of tensor t_grad over the image in a tiled way.
