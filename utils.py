@@ -168,7 +168,7 @@ class Deepdream:
         """.format(data=repr(str(strip_def)), id='graph' + str(np.random.rand()))
 
         iframe = """
-            <iframe seamless style="width:800px;height:620px;border:0" srcdoc="{}"></iframe>
+            <iframe seamless style="width:1024px;height:768px;border:0" srcdoc="{}"></iframe>
         """.format(code.replace('"', '&quot;'))
         display(HTML(iframe))
 
