@@ -11,6 +11,7 @@ import tensorflow as tf
 
 img_noise = np.random.uniform(size=(224,224,3)) + 100.0
 
+
 def load_dependencies():
     if not os.path.exists('models/tensorflow_inception_graph.pb'):
         subprocess.call(['wget', '-O', 'models/inception5h.zip',
@@ -30,7 +31,6 @@ def strip_consts(graph_def, max_const_size=32):
             if size > max_const_size:
                 tensor.tensor_content = bytes("<stripped %d bytes>" % size, 'utf-8')
     return strip_def
-
 
 
 def rename_nodes(graph_def, rename_func):
@@ -83,10 +83,12 @@ def _resize(img, size):
     img = tf.expand_dims(img, 0)
     return tf.image.resize_bilinear(img, size)[0, :, :, :]
 
+
 def show_pic():
     img0 = PIL.Image.open('images/pilatus800.jpg')
     img0 = np.float32(img0)
     showarray(img0 / 255.0)
+
 
 class Deepdream:
     def __init__(self, model_fn='models/tensorflow_inception_graph.pb'):
@@ -151,7 +153,7 @@ class Deepdream:
         return self.graph.get_tensor_by_name("import/%s:0" % layer)
 
     def show_graph(self, graph_def, max_const_size=32):
-        """Visualize TensorFlow graph."""
+        '''Visualize TensorFlow graph.'''
         if hasattr(self.graph_def, 'as_graph_def'):
             self.graph_def = self.graph_def.as_graph_def()
         strip_def = strip_consts(self.graph_def, max_const_size=max_const_size)
@@ -289,18 +291,18 @@ class Deepdream:
             showarray(img / 255.0)
 
 
-# def main():
-#     load_dependencies()
-#     net = Deepdream()
-#     T = net.T
-#
-#     layer = 'mixed4d_3x3_bottleneck_pre_relu'
-#     channel = 139
-#
-#     net.render_naive(T(layer)[:, :, :, channel])
-#     net.render_multiscale(T(layer)[:, :, :, channel])
-#
-#
-# if __name__== '__main__':
-#     main()
+def main():
+    load_dependencies()
+    net = Deepdream()
+    T = net.T
+
+    layer = 'mixed4d_3x3_bottleneck_pre_relu'
+    channel = 139
+
+    net.render_naive(T(layer)[:, :, :, channel])
+    net.render_multiscale(T(layer)[:, :, :, channel])
+
+
+if __name__ == '__main__':
+    main()
 
