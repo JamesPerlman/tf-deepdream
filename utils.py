@@ -134,7 +134,7 @@ class Deepdream:
                 grad[y:y + sz, x:x + sz] = g
         return np.roll(np.roll(grad, -sx, 1), -sy, 0)
 
-    def render_naive(self, t_obj, img0=img_noise, iter_n=20, step=1.0):
+    def get_naive(self, t_obj, img0=img_noise, iter_n=20, step=1.0, show_steps=False):
         t_score = tf.reduce_mean(t_obj)  # defining the optimization objective
         t_grad = tf.gradients(t_score, self.t_input)[0]  # behold the power of automatic differentiation!
 
@@ -145,8 +145,16 @@ class Deepdream:
             g /= g.std() + 1e-8  # for different layers and networks
             img += g * step
             print(score, end=' ')
-        clear_output()
-        showarray(visstd(img))
+
+        if show_steps:
+            clear_output()
+            showarray(visstd(img))
+
+        return visstd(img)
+
+    def render_naive(self, *args, **kwargs):
+        kwargs['show_steps'] = True
+        self.get_naive(*args, **kwargs)
 
     def T(self, layer):
         '''Helper for getting layer output tensor'''
@@ -174,7 +182,8 @@ class Deepdream:
         """.format(code.replace('"', '&quot;'))
         display(HTML(iframe))
 
-    def render_multiscale(self, t_obj, img0=img_noise, iter_n=10, step=1.0, octave_n=3, octave_scale=1.4):
+    def get_multiscale(self, t_obj, img0=img_noise, iter_n=10, step=1.0, octave_n=3, octave_scale=1.4,
+                          show_steps=False):
         t_score = tf.reduce_mean(t_obj)  # defining the optimization objective
         t_grad = tf.gradients(t_score, self.t_input)[0]  # behold the power of automatic differentiation!
 
@@ -189,8 +198,16 @@ class Deepdream:
                 g /= g.std() + 1e-8  # for different layers and networks
                 img += g * step
                 print('.', end=' ')
-            clear_output()
-            showarray(visstd(img))
+
+            if show_steps:
+                clear_output()
+                showarray(visstd(img))
+
+        return visstd(img)
+
+    def render_multiscale(self, *args, **kwargs):
+        kwargs['show_steps'] = True
+        self.get_multiscale(*args, **kwargs)
 
     def print_stats(self):
         layers = [op.name for op in self.graph.get_operations() if op.type == 'Conv2D' and 'import/' in op.name]
@@ -239,7 +256,7 @@ class Deepdream:
         return out[0, :, :, :]
 
     def get_lapnorm(self, t_obj, img0=img_noise, visfunc=visstd,
-                    iter_n=10, step=1.0, octave_n=3, octave_scale=1.4, lap_n=4):
+                    iter_n=10, step=1.0, octave_n=3, octave_scale=1.4, lap_n=4, show_steps=False):
         t_score = tf.reduce_mean(t_obj)  # defining the optimization objective
         t_grad = tf.gradients(t_score, self.t_input)[0]  # behold the power of automatic differentiation!
         # build the laplacian normalization graph
@@ -255,16 +272,18 @@ class Deepdream:
                 g = lap_norm_func(g)
                 img += g * step
                 print('.', end=' ')
-            clear_output()
-            showarray(visfunc(img))
+            if show_steps:
+                clear_output()
+                showarray(visfunc(img))
 
         return visfunc(img)
 
     def render_lapnorm(self, *args, **kwargs):
+        kwargs['show_steps'] = True
         self.get_lapnorm(*args, **kwargs)
 
-    def render_deepdream(self, t_obj, img0=img_noise,
-                         iter_n=10, step=1.5, octave_n=4, octave_scale=1.4):
+    def get_deepdream(self, t_obj, img0=img_noise,
+                         iter_n=10, step=1.5, octave_n=4, octave_scale=1.4, show_steps=False):
         t_score = tf.reduce_mean(t_obj)  # defining the optimization objective
         t_grad = tf.gradients(t_score, self.t_input)[0]  # behold the power of automatic differentiation!
 
@@ -287,8 +306,16 @@ class Deepdream:
                 g = self.calc_grad_tiled(img, t_grad)
                 img += g * (step / (np.abs(g).mean() + 1e-7))
                 print('.', end=' ')
-            clear_output()
-            showarray(img / 255.0)
+
+            if show_steps:
+                clear_output()
+                showarray(img / 255.0)
+
+        return img / 255.0
+    
+    def render_deepdream(self, *args, **kwargs):
+        kwargs['show_steps'] = True
+        self.get_deepdream(*args, **kwargs)
 
 
 def main():
@@ -296,11 +323,10 @@ def main():
     net = Deepdream()
     T = net.T
 
-    layer = 'mixed4d_3x3_bottleneck_pre_relu'
-    channel = 139
-
-    net.render_naive(T(layer)[:, :, :, channel])
-    net.render_multiscale(T(layer)[:, :, :, channel])
+    ops = net.graph.get_operations()
+    for operation in ops:
+        if 'pre_relu' in operation.name:
+            print(operation.name, operation.values()[0].get_shape())
 
 
 if __name__ == '__main__':
