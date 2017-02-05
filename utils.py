@@ -321,7 +321,6 @@ class Deepdream:
 def main():
     load_dependencies()
     net = Deepdream()
-    T = net.T
 
     ops = net.graph.get_operations()
     for operation in ops:
