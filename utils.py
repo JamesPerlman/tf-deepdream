@@ -324,7 +324,7 @@ def main():
 
     ops = net.graph.get_operations()
     for operation in ops:
-        if 'pre_relu' in operation.name:
+        if operation.name.endswith('_pre_relu'):
             print(operation.name, operation.values()[0].get_shape())
 
 
