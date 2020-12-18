@@ -1,0 +1,5785 @@
+Total number of feature channels: 7548
+input
+list {
+  shape {
+    unknown_rank: true
+  }
+}
+
+sub/y
+list {
+  shape {
+  }
+}
+
+sub
+list {
+  shape {
+    unknown_rank: true
+  }
+}
+
+ExpandDims/dim
+list {
+  shape {
+  }
+}
+
+ExpandDims
+list {
+  shape {
+    unknown_rank: true
+  }
+}
+
+import/input
+list {
+  shape {
+    unknown_rank: true
+  }
+}
+
+import/conv2d0_w
+list {
+  shape {
+    dim {
+      size: 7
+    }
+    dim {
+      size: 7
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d0_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 64
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d1_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d2_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 64
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/conv2d2_b
+list {
+  shape {
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed3a_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 192
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3a_1x1_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3a_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 192
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3a_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3a_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 96
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3a_3x3_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3a_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 192
+    }
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed3a_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed3a_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 16
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a_5x5_b
+list {
+  shape {
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 192
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3b_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 256
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_1x1_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 256
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 128
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed3b_3x3_b
+list {
+  shape {
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed3b_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 256
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3b_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3b_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 32
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3b_5x5_b
+list {
+  shape {
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3b_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 256
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3b_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4a_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 480
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed4a_1x1_b
+list {
+  shape {
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed4a_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 480
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed4a_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed4a_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 96
+    }
+    dim {
+      size: 204
+    }
+  }
+}
+
+import/mixed4a_3x3_b
+list {
+  shape {
+    dim {
+      size: 204
+    }
+  }
+}
+
+import/mixed4a_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 480
+    }
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed4a_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed4a_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 16
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed4a_5x5_b
+list {
+  shape {
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed4a_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 480
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4a_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 508
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4b_1x1_b
+list {
+  shape {
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4b_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 508
+    }
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4b_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4b_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 112
+    }
+    dim {
+      size: 224
+    }
+  }
+}
+
+import/mixed4b_3x3_b
+list {
+  shape {
+    dim {
+      size: 224
+    }
+  }
+}
+
+import/mixed4b_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 508
+    }
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4b_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4b_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 24
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_5x5_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 508
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 512
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_1x1_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 512
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 128
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4c_3x3_b
+list {
+  shape {
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4c_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 512
+    }
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4c_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4c_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 24
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_5x5_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 512
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 512
+    }
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4d_1x1_b
+list {
+  shape {
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4d_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 512
+    }
+    dim {
+      size: 144
+    }
+  }
+}
+
+import/mixed4d_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 144
+    }
+  }
+}
+
+import/mixed4d_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 144
+    }
+    dim {
+      size: 288
+    }
+  }
+}
+
+import/mixed4d_3x3_b
+list {
+  shape {
+    dim {
+      size: 288
+    }
+  }
+}
+
+import/mixed4d_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 512
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4d_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4d_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 32
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_5x5_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 512
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4e_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 528
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4e_1x1_b
+list {
+  shape {
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4e_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 528
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4e_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4e_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 160
+    }
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed4e_3x3_b
+list {
+  shape {
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed4e_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 528
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4e_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4e_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 32
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e_5x5_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 528
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 832
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed5a_1x1_b
+list {
+  shape {
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed5a_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 832
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed5a_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed5a_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 160
+    }
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed5a_3x3_b
+list {
+  shape {
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed5a_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 832
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5a_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5a_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 48
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_5x5_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 832
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_1x1_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 832
+    }
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_1x1_b
+list {
+  shape {
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_3x3_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 832
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed5b_3x3_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed5b_3x3_w
+list {
+  shape {
+    dim {
+      size: 3
+    }
+    dim {
+      size: 3
+    }
+    dim {
+      size: 192
+    }
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_3x3_b
+list {
+  shape {
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_5x5_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 832
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5b_5x5_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5b_5x5_w
+list {
+  shape {
+    dim {
+      size: 5
+    }
+    dim {
+      size: 5
+    }
+    dim {
+      size: 48
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_5x5_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_pool_reduce_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 832
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_pool_reduce_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head0_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 508
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head0_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/nn0_w
+list {
+  shape {
+    dim {
+      size: 2048
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/nn0_b
+list {
+  shape {
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/softmax0_w
+list {
+  shape {
+    dim {
+      size: 1024
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax0_b
+list {
+  shape {
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/head1_bottleneck_w
+list {
+  shape {
+    dim {
+      size: 1
+    }
+    dim {
+      size: 1
+    }
+    dim {
+      size: 528
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head1_bottleneck_b
+list {
+  shape {
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/nn1_w
+list {
+  shape {
+    dim {
+      size: 2048
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/nn1_b
+list {
+  shape {
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/softmax1_w
+list {
+  shape {
+    dim {
+      size: 1024
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax1_b
+list {
+  shape {
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax2_w
+list {
+  shape {
+    dim {
+      size: 1024
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax2_b
+list {
+  shape {
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/conv2d0_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d0_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d0
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/maxpool0
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/localresponsenorm0
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/conv2d2_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/conv2d2_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/conv2d2
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/localresponsenorm1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/maxpool1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed3a_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3a_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3a_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3a_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3a_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3a_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3a_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3a_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3a_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3a_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed3a_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed3a_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed3a_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed3a_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3a/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed3a
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed3b_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed3b_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed3b_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed3b_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed3b_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3b_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3b_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed3b_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3b_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3b_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed3b_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed3b_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3b_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3b_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed3b/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed3b
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 480
+    }
+  }
+}
+
+import/maxpool4
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 480
+    }
+  }
+}
+
+import/mixed4a_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed4a_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed4a_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed4a_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed4a_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed4a_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 96
+    }
+  }
+}
+
+import/mixed4a_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 204
+    }
+  }
+}
+
+import/mixed4a_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 204
+    }
+  }
+}
+
+import/mixed4a_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 204
+    }
+  }
+}
+
+import/mixed4a_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed4a_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed4a_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 16
+    }
+  }
+}
+
+import/mixed4a_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed4a_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed4a_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed4a_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 480
+    }
+  }
+}
+
+import/mixed4a_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4a_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4a_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4a/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed4a
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 508
+    }
+  }
+}
+
+import/mixed4b_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4b_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4b_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4b_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4b_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4b_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4b_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 224
+    }
+  }
+}
+
+import/mixed4b_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 224
+    }
+  }
+}
+
+import/mixed4b_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 224
+    }
+  }
+}
+
+import/mixed4b_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4b_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4b_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4b_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 508
+    }
+  }
+}
+
+import/mixed4b_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4b/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed4b
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 512
+    }
+  }
+}
+
+import/mixed4c_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4c_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4c_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4c_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4c_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4c_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4c_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 24
+    }
+  }
+}
+
+import/mixed4c_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 512
+    }
+  }
+}
+
+import/mixed4c_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4c/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed4c
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 512
+    }
+  }
+}
+
+import/mixed4d_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4d_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4d_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 112
+    }
+  }
+}
+
+import/mixed4d_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 144
+    }
+  }
+}
+
+import/mixed4d_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 144
+    }
+  }
+}
+
+import/mixed4d_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 144
+    }
+  }
+}
+
+import/mixed4d_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 288
+    }
+  }
+}
+
+import/mixed4d_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 288
+    }
+  }
+}
+
+import/mixed4d_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 288
+    }
+  }
+}
+
+import/mixed4d_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4d_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4d_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4d_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 512
+    }
+  }
+}
+
+import/mixed4d_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 64
+    }
+  }
+}
+
+import/mixed4d/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed4d
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 528
+    }
+  }
+}
+
+import/mixed4e_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4e_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4e_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed4e_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4e_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4e_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed4e_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed4e_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed4e_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed4e_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4e_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4e_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 32
+    }
+  }
+}
+
+import/mixed4e_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 528
+    }
+  }
+}
+
+import/mixed4e_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed4e/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed4e
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 832
+    }
+  }
+}
+
+import/maxpool10
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 832
+    }
+  }
+}
+
+import/mixed5a_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed5a_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed5a_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 256
+    }
+  }
+}
+
+import/mixed5a_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed5a_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed5a_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 160
+    }
+  }
+}
+
+import/mixed5a_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed5a_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed5a_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 320
+    }
+  }
+}
+
+import/mixed5a_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5a_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5a_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5a_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 832
+    }
+  }
+}
+
+import/mixed5a_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5a/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed5a
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 832
+    }
+  }
+}
+
+import/mixed5b_1x1_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_1x1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_1x1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_3x3_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed5b_3x3_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed5b_3x3_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 192
+    }
+  }
+}
+
+import/mixed5b_3x3_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_3x3_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_3x3
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 384
+    }
+  }
+}
+
+import/mixed5b_5x5_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5b_5x5_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5b_5x5_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 48
+    }
+  }
+}
+
+import/mixed5b_5x5_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_5x5_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_5x5
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 832
+    }
+  }
+}
+
+import/mixed5b_pool_reduce_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_pool_reduce_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b_pool_reduce
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/mixed5b/concat_dim
+list {
+  shape {
+  }
+}
+
+import/mixed5b
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/avgpool0
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/head0_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 508
+    }
+  }
+}
+
+import/head0_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head0_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head0_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head0_bottleneck/reshape/shape
+list {
+  shape {
+    dim {
+      size: 2
+    }
+  }
+}
+
+import/head0_bottleneck/reshape
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 2048
+    }
+  }
+}
+
+import/nn0_pre_relu/matmul
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/nn0_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/nn0
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/nn0/reshape/shape
+list {
+  shape {
+    dim {
+      size: 2
+    }
+  }
+}
+
+import/nn0/reshape
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/softmax0_pre_activation/matmul
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax0_pre_activation
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax0
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/head1_pool
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 528
+    }
+  }
+}
+
+import/head1_bottleneck_pre_relu/conv
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head1_bottleneck_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head1_bottleneck
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: -1
+    }
+    dim {
+      size: 128
+    }
+  }
+}
+
+import/head1_bottleneck/reshape/shape
+list {
+  shape {
+    dim {
+      size: 2
+    }
+  }
+}
+
+import/head1_bottleneck/reshape
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 2048
+    }
+  }
+}
+
+import/nn1_pre_relu/matmul
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/nn1_pre_relu
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/nn1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/nn1/reshape/shape
+list {
+  shape {
+    dim {
+      size: 2
+    }
+  }
+}
+
+import/nn1/reshape
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/softmax1_pre_activation/matmul
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax1_pre_activation
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/avgpool0/reshape/shape
+list {
+  shape {
+    dim {
+      size: 2
+    }
+  }
+}
+
+import/avgpool0/reshape
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1024
+    }
+  }
+}
+
+import/softmax2_pre_activation/matmul
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax2_pre_activation
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/softmax2
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/output
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/output1
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}
+
+import/output2
+list {
+  shape {
+    dim {
+      size: -1
+    }
+    dim {
+      size: 1008
+    }
+  }
+}

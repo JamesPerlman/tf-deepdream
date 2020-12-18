@@ -1,0 +1,31 @@
+TensorFlow 2.0 Upgrade Script
+-----------------------------
+Converted 1 files
+Detected 1 issues that require attention
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+File: dream_funcs.py
+--------------------------------------------------------------------------------
+dream_funcs.py:42:4: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+================================================================================
+Detailed log follows:
+
+================================================================================
+--------------------------------------------------------------------------------
+Processing file 'dream_funcs.py'
+ outputting to 'dream_funcs.py'
+--------------------------------------------------------------------------------
+
+15:7: INFO: Renamed 'tf.InteractiveSession' to 'tf.compat.v1.InteractiveSession'
+16:5: INFO: Renamed 'tf.gfile.FastGFile' to 'tf.compat.v1.gfile.FastGFile'
+17:16: INFO: Renamed 'tf.GraphDef' to 'tf.compat.v1.GraphDef'
+19:10: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+42:4: WARNING: *.save requires manual check. (This warning is only applicable if the code saves a tf.Keras model) Keras model.save now saves to the Tensorflow SavedModel format by default, instead of HDF5. To continue saving to HDF5, add the argument save_format='h5' to the save() function.
+49:14: INFO: Added keywords to args of function 'tf.reduce_mean'
+50:13: INFO: Added keywords to args of function 'tf.gradients'
+67:28: INFO: Renamed 'tf.placeholder' to 'tf.compat.v1.placeholder'
+78:11: INFO: Changed tf.image.resize_bilinear call to tf.image.resize(..., method=tf.image.ResizeMethod.BILINEAR).
+99:14: INFO: Added keywords to args of function 'tf.reduce_mean'
+100:13: INFO: Added keywords to args of function 'tf.gradients'
+--------------------------------------------------------------------------------
+
