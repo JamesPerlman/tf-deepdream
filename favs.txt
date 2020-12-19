@@ -1,3 +1,4 @@
 favs
 
 mixed5b_1x1_pre_relu chan=57 iter=200 oct=8 scale=1.5
+mixed5b_1x1_pre_relu chan=82 iter=200 oct=8 scale=1.5
