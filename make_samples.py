@@ -1,19 +1,9 @@
 import os
 from dream_funcs import DeepDream
-from PIL import Image, ImageChops
-import numpy as np
-
-base_dir = "E:/2020/Instagram/35. Pizza/dream/"
-
-in_dir = base_dir + "in/"
-out_dir = base_dir + "out/"
-
-files = os.listdir(in_dir)
-num_files = len(files)
 
 # layer = 'mixed5b_1x1_pre_relu' unfinished
-layer = 'mixed4d_3x3_bottleneck_pre_relu'
-nMax = 144
+layer = 'mixed5a_pool'
+nMax = 832
 n_iter = 200
 step = 1.5
 octaves = 8
@@ -21,10 +11,6 @@ octave_scale = 1.5
 
 
 sample_input = "images/noise.jpg"
-
-#img_noise = np.random.uniform(size=(1024, 1024,3)) + 128.0
-#im = Image.fromarray(np.uint8(img_noise))
-#im.save('images/noise.jpg')
 
 for i in range(0, nMax):
     sample_dir = "samples/" + layer

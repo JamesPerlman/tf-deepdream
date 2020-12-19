@@ -55,7 +55,7 @@ class DeepDream:
             t_score = tf.reduce_mean(t_obj) # defining the optimization objective
 
             self.t_grad = tf.gradients(t_score, t_input)[0] # behold the power of automatic differentiation!
-            self.resize = tffunc(cp.float32, cp.int32)(resize)
+            self.resize = tffunc(np.float32, np.int32)(resize)
             self.t_input = t_input
             self.session = sess
     
@@ -88,8 +88,8 @@ class DeepDream:
         for y in range(0, max(h - sz//2, sz), sz):
             for x in range(0, max(w - sz//2, sz), sz):
                 sub = img_shift[y: y + sz, x: x + sz]
-                g = sess.run(self.t_grad, { self.t_input: sub })
-                grad[y:y+sz,x:x+sz] = g
+                g = sess.run(self.t_grad, { self.t_input: cp.asnumpy(sub) })
+                grad[y:y+sz,x:x+sz] = cp.asarray(g)
         return cp.roll(cp.roll(grad, -sx, 1), -sy, 0)
 
     def render(self, img_in, img_out, iter_n=1, step=1.5, octave_n=1, octave_scale=1.5):
@@ -98,9 +98,9 @@ class DeepDream:
         img = cp.asarray(np.float32(img))
         octaves = []
         for i in range(octave_n - 1):
-            hw = img.shape[:2]
-            lo = cp.resize(img, cp.int32(cp.float32(hw) / octave_scale))
-            hi = img - cp.resize(lo, hw)
+            (*hw, c) = img.shape
+            lo = cp.resize(img, (*cp.int32(cp.float32(hw) / octave_scale), c))
+            hi = img - cp.resize(lo, (*hw, c))
             img = lo
             octaves.append(hi)
         
@@ -108,7 +108,7 @@ class DeepDream:
         for octave in range(0, octave_n):
             if octave>0:
                 hi = octaves[-octave]
-                img = cp.resize(img, hi.shape[:2]) + hi
+                img = cp.resize(img, hi.shape) + hi
             for i in range(iter_n):
                 g = self.calc_grad_tiled(img, 512, octave * iter_n + i)
                 img += g * (step / (cp.abs(g).mean() + 1e-7))
