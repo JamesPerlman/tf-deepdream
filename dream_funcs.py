@@ -3,7 +3,6 @@ import os
 import subprocess
 from io import BytesIO
 import numpy as np
-import cupy as cp
 from functools import partial
 import PIL.Image
 
