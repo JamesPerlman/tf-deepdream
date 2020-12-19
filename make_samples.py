@@ -11,7 +11,7 @@ out_dir = base_dir + "out/"
 files = os.listdir(in_dir)
 num_files = len(files)
 
-layer = 'mixed5b_1x1_pre_relu'
+# layer = 'mixed5b_1x1_pre_relu' unfinished
 nMax = 384
 n_iter = 200
 step = 1.5
@@ -26,7 +26,6 @@ sample_input = "images/noise.jpg"
 #im.save('images/noise.jpg')
 
 for i in range(0, nMax):
-    filename = files[i]
     sample_dir = "samples/" + layer
     if not os.path.exists(sample_dir):
         os.mkdir(sample_dir)
