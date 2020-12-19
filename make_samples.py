@@ -12,7 +12,8 @@ files = os.listdir(in_dir)
 num_files = len(files)
 
 # layer = 'mixed5b_1x1_pre_relu' unfinished
-nMax = 384
+layer = 'mixed4d_3x3_bottleneck_pre_relu'
+nMax = 144
 n_iter = 200
 step = 1.5
 octaves = 8

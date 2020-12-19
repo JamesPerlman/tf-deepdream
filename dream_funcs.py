@@ -45,7 +45,7 @@ class DeepDream:
             sess = tf.InteractiveSession(graph=graph)
 
             # define the input tensor
-            t_input = tf.placeholder(np.float32, name='input')
+            t_input = tf.placeholder(cp.float32, name='input')
             imagenet_mean = 117.0
             t_preprocessed = tf.expand_dims(t_input - imagenet_mean, 0)
             tf.import_graph_def(graph_def, { 'input' : t_preprocessed })
@@ -55,7 +55,7 @@ class DeepDream:
             t_score = tf.reduce_mean(t_obj) # defining the optimization objective
 
             self.t_grad = tf.gradients(t_score, t_input)[0] # behold the power of automatic differentiation!
-            self.resize = tffunc(np.float32, np.int32)(resize)
+            self.resize = tffunc(cp.float32, cp.int32)(resize)
             self.t_input = t_input
             self.session = sess
     
@@ -65,8 +65,8 @@ class DeepDream:
 
     # deepdream funcs
     def save_image(self, a, name):
-        a = np.uint8(np.clip(a, 0, 1)*255)
-        img = PIL.Image.fromarray(a)
+        a = cp.uint8(cp.clip(a, 0, 1) * 255)
+        img = PIL.Image.fromarray(cp.asnumpy(a))
         rgb_img = img.convert('RGB')
         rgb_img.save(name)
 
@@ -80,8 +80,8 @@ class DeepDream:
         sx = i % tile_size
         sy = sx
 
-        img_shift = np.roll(np.roll(img, sx, 1), sy, 0)
-        grad = np.zeros_like(img)
+        img_shift = cp.roll(cp.roll(img, sx, 1), sy, 0)
+        grad = cp.zeros_like(img)
 
         sess = tf.get_default_session()
         
@@ -90,17 +90,17 @@ class DeepDream:
                 sub = img_shift[y: y + sz, x: x + sz]
                 g = sess.run(self.t_grad, { self.t_input: sub })
                 grad[y:y+sz,x:x+sz] = g
-        return np.roll(np.roll(grad, -sx, 1), -sy, 0)
+        return cp.roll(cp.roll(grad, -sx, 1), -sy, 0)
 
     def render(self, img_in, img_out, iter_n=1, step=1.5, octave_n=1, octave_scale=1.5):
         # split the image into a number of octaves
         img = PIL.Image.open(img_in)
-        img = np.float32(img)
+        img = cp.asarray(np.float32(img))
         octaves = []
-        for i in range(octave_n-1):
+        for i in range(octave_n - 1):
             hw = img.shape[:2]
-            lo = self.resize(img, np.int32(np.float32(hw)/octave_scale))
-            hi = img - self.resize(lo, hw)
+            lo = cp.resize(img, cp.int32(cp.float32(hw) / octave_scale))
+            hi = img - cp.resize(lo, hw)
             img = lo
             octaves.append(hi)
         
@@ -108,8 +108,8 @@ class DeepDream:
         for octave in range(0, octave_n):
             if octave>0:
                 hi = octaves[-octave]
-                img = self.resize(img, hi.shape[:2]) + hi
+                img = cp.resize(img, hi.shape[:2]) + hi
             for i in range(iter_n):
                 g = self.calc_grad_tiled(img, 512, octave * iter_n + i)
-                img += g * (step / (np.abs(g).mean() + 1e-7))
-        self.save_image(img/255.0, img_out)
+                img += g * (step / (cp.abs(g).mean() + 1e-7))
+        self.save_image(img / 255.0, img_out)

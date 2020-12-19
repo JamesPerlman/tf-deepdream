@@ -8,9 +8,9 @@ import numpy as np
 blend_frames = True
 alpha_step = 0.5
 
-layer = 'mixed5b_1x1'
-channel = 314
-n_iter = 30
+layer = 'mixed4d_5x5'
+channel = 43
+n_iter = 50
 step = 1.5
 octaves = 8
 octave_scale = 1.5
