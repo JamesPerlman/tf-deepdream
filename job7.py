@@ -1,3 +1,4 @@
+import sys
 import os
 import csv
 from dream_funcs import DeepDream
@@ -9,9 +10,9 @@ from image_funcs import blended
 blend_frames = True
 alpha_step = 0.5
 
-layer = 'mixed4d_5x5'
-channel = 22
-n_iter = 35
+layer = 'head0_bottleneck_pre_relu'
+channel = 59
+n_iter = 40
 step = 1.5
 octaves = 8
 octave_scale = 1.5
@@ -21,7 +22,12 @@ dd = DeepDream(layer, (lambda T: T[:,:,:,channel]))
 # file data
 base_dir = "E:/2020/Instagram/21. Parkour/source/dream/"
 in_dir = base_dir + "in/"
-out_dir = "{} ch={:d} n={:d}  st={:.2f} oc={:d} sc={:.2f} bl={:.2f}".format(base_dir + layer, channel, n_iter, step, octaves, octave_scale, alpha_step) + "/"
+out_dir = base_dir + "layer0/"
+
+if not os.path.exists(out_dir):
+    os.mkdir(out_dir)
+
+out_dir = "{} ch={:d} n={:d}  st={:.2f} oc={:d} sc={:.2f} bl={:.2f}".format(out_dir + layer, channel, n_iter, step, octaves, octave_scale, alpha_step) + "/"
 
 if not os.path.exists(out_dir):
     os.mkdir(out_dir)
@@ -29,16 +35,15 @@ if not os.path.exists(out_dir):
 files = os.listdir(in_dir)
 num_files = len(files)
 
-motionData = list(csv.DictReader(open(base_dir + "motion.csv")))
+motionData = list(csv.DictReader(open(base_dir + "layer0.csv")))
 
 for i in range(0, num_files):
     filename = files[i]
     img_out = out_dir + filename
 
-    scale = motionData[i]["Scale"]
     position = motionData[i]["Position"]
     
-    sx, sy, sz = map(float, scale.split(","))
+    sx, sy, sz = (100,100,100)
     px, py, pz = map(float, position.split(","))
 
     if os.path.exists(img_out):

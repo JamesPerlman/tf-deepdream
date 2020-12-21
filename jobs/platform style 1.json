@@ -1,0 +1,11 @@
+{
+    "in_dir": "E:/2020/Instagram/21. Parkour/source/dream/in/",
+    "out_dir": "E:/2020/Instagram/21. Parkour/source/dream/layer1style1/",
+    "file_prefix": "platform_style_1_",
+    "layer": "mixed4d_5x5",
+    "channel": 8,
+    "iterations": 35,
+    "step": 1.5,
+    "octaves": 8,
+    "scale": 1.5
+}

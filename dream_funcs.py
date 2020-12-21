@@ -18,7 +18,6 @@ def load_graph_def():
 
         return graph_def
 
-
 def tffunc(*argtypes):
     '''Helper that transforms TF-graph generating function into a regular one.
     See "resize" function below.

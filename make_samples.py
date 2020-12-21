@@ -1,11 +1,10 @@
 import os
 from dream_funcs import DeepDream
-from PIL import Image, ImageChops
 import numpy as np
 
 # layer = 'mixed5b_1x1_pre_relu' unfinished
-layer = 'mixed5a_pool'
-nMax = 832
+layer = 'mixed5b_1x1_pre_relu'
+nMax = 128
 n_iter = 200
 step = 1.5
 octaves = 8
